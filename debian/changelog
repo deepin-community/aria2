@@ -1,8 +1,12 @@
-aria2 (1.36.0-1) UNRELEASED; urgency=medium
+aria2 (1.36.0-1deepin0) unstable; urgency=medium
 
+  [ Patrick Ruckstuhl ]
   * update
 
- -- Patrick Ruckstuhl <patrick@ch.tario.org>  Thu, 12 May 2022 10:13:30 +0800
+  [ Tianyu Chen ]
+  * No source change upload against GCC 12.
+
+ -- Tianyu Chen <sweetyfish@deepin.org>  Thu, 19 Sep 2024 22:42:00 +0800
 
 aria2 (1.36.0-1) unstable; urgency=low
 
