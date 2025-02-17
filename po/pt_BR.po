@@ -6,27 +6,27 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: aria2\n"
-"Report-Msgid-Bugs-To: https://aria2.github.io/\n"
-"POT-Creation-Date: 2021-08-21 17:31+0900\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2017-10-17 22:28+0900\n"
 "PO-Revision-Date: 2018-12-31 11:33+0000\n"
 "Last-Translator: Rafael Fontenelle <Unknown>\n"
 "Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
-"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2021-08-21 07:32+0000\n"
-"X-Generator: Launchpad (build 25edfd4b3e79d9ee9d9c3a750eb93e4d41d56c9e)\n"
+"X-Launchpad-Export-Date: 2023-11-17 08:00+0000\n"
+"X-Generator: Launchpad (build f1e537f62ee3967c2b3f24dd10eacf1696334fe6)\n"
+"Language: pt_BR\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: src/DownloadEngine.cc:255
+#: src/DownloadEngine.cc:247
 msgid ""
 "Shutdown sequence commencing... Press Ctrl-C again for emergency shutdown."
 msgstr ""
 "Sequência de encerramento iniciada... Pressione Ctrl-C novamente para "
 "encerrar imediatamente."
 
-#: src/DownloadEngine.cc:265
+#: src/DownloadEngine.cc:257
 msgid "Emergency shutdown sequence commencing..."
 msgstr "Sequência de encerramento de emergência iniciada..."
 
@@ -254,7 +254,8 @@ msgstr ""
 " --http-user=USUÁRIO          Define usuário HTTP. Isso afeta todas as URLs."
 
 #: src/usage_text.h:97
-msgid " --http-passwd=PASSWD         Set HTTP password. This affects all URLs."
+msgid ""
+" --http-passwd=PASSWD         Set HTTP password. This affects all URLs."
 msgstr ""
 " --http-passwd=SENHA          Define senha HTTP. Isso afeta todas as URLs."
 
@@ -283,8 +284,10 @@ msgstr ""
 " --ftp-user=USUÁRIO           Define o usuário FTP. Afeta todas as URLs."
 
 #: src/usage_text.h:109
-msgid " --ftp-passwd=PASSWD          Set FTP password. This affects all URLs."
-msgstr " --ftp-passwd=SENHA           Define a senha FTP. Afeta todas as URLs."
+msgid ""
+" --ftp-passwd=PASSWD          Set FTP password. This affects all URLs."
+msgstr ""
+" --ftp-passwd=SENHA           Define a senha FTP. Afeta todas as URLs."
 
 #: src/usage_text.h:111
 msgid " --ftp-type=TYPE              Set FTP transfer type."
@@ -321,8 +324,8 @@ msgstr ""
 
 #: src/usage_text.h:122
 msgid ""
-" --max-overall-download-limit=SPEED Set max overall download speed in bytes/"
-"sec.\n"
+" --max-overall-download-limit=SPEED Set max overall download speed in "
+"bytes/sec.\n"
 "                              0 means unrestricted.\n"
 "                              You can append K or M(1K = 1024, 1M = 1024K).\n"
 "                              To limit the download speed per download, use\n"
@@ -729,8 +732,8 @@ msgstr ""
 
 #: src/usage_text.h:267
 msgid ""
-" --save-cookies=FILE          Save Cookies to FILE in Mozilla/Firefox(1.x/2."
-"x)/\n"
+" --save-cookies=FILE          Save Cookies to FILE in "
+"Mozilla/Firefox(1.x/2.x)/\n"
 "                              Netscape format. If FILE already exists, it "
 "is\n"
 "                              overwritten. Session Cookies are also saved "
@@ -761,8 +764,8 @@ msgid ""
 "                              You can find the file index using the\n"
 "                              --show-files option. Multiple indexes can be\n"
 "                              specified by using ',', for example: \"3,6\".\n"
-"                              You can also use '-' to specify a range: "
-"\"1-5\".\n"
+"                              You can also use '-' to specify a range: \"1-"
+"5\".\n"
 "                              ',' and '-' can be used together.\n"
 "                              When used with the -M option, index may vary\n"
 "                              depending on the query(see --metalink-* "
@@ -817,8 +820,8 @@ msgstr ""
 msgid ""
 " --listen-port=PORT...        Set TCP port number for BitTorrent downloads.\n"
 "                              Multiple ports can be specified by using ',',\n"
-"                              for example: \"6881,6885\". You can also use "
-"'-'\n"
+"                              for example: \"6881,6885\". You can also use '-"
+"'\n"
 "                              to specify a range: \"6881-6999\". ',' and '-' "
 "can\n"
 "                              be used together."
@@ -832,8 +835,8 @@ msgstr ""
 
 #: src/usage_text.h:305
 msgid ""
-" --max-overall-upload-limit=SPEED Set max overall upload speed in bytes/"
-"sec.\n"
+" --max-overall-upload-limit=SPEED Set max overall upload speed in "
+"bytes/sec.\n"
 "                              0 means unrestricted.\n"
 "                              You can append K or M(1K = 1024, 1M = 1024K).\n"
 "                              To limit the upload speed per torrent, use\n"
@@ -950,8 +953,8 @@ msgid ""
 "specified\n"
 "                              by using ',', for example: \"6881,6885\". You "
 "can\n"
-"                              also use '-' to specify a range: "
-"\"6881-6999\".\n"
+"                              also use '-' to specify a range: \"6881-"
+"6999\".\n"
 "                              ',' and '-' can be used together."
 msgstr ""
 " --dht-listen-port=PORTA...   Define porta UDP usada pelo DHT (IPv4, IPv6)\n"
@@ -1064,8 +1067,8 @@ msgstr ""
 
 #: src/usage_text.h:384
 msgid ""
-" -M, --metalink-file=METALINK_FILE The file path to the .meta4 and ."
-"metalink\n"
+" -M, --metalink-file=METALINK_FILE The file path to the .meta4 and "
+".metalink\n"
 "                              file. Reads input from stdin when '-' is\n"
 "                              specified."
 msgstr ""
@@ -1187,7 +1190,8 @@ msgstr ""
 
 #: src/usage_text.h:429
 msgid " -v, --version                Print the version number and exit."
-msgstr " -v, --version                Exibe o número da versão do aria2 e sai."
+msgstr ""
+" -v, --version                Exibe o número da versão do aria2 e sai."
 
 #: src/usage_text.h:431
 msgid ""
@@ -1212,7 +1216,8 @@ msgstr ""
 
 #: src/usage_text.h:438
 msgid " --no-conf[=true|false]       Disable loading aria2.conf file."
-msgstr " --no-conf[=true|false]       Desabilita carregar arquivo aria2.conf."
+msgstr ""
+" --no-conf[=true|false]       Desabilita carregar arquivo aria2.conf."
 
 #: src/usage_text.h:440
 msgid ""
@@ -2053,8 +2058,8 @@ msgid ""
 "                              You can pass this output file to aria2c with -"
 "i\n"
 "                              option on restart. Please note that downloads\n"
-"                              added by aria2.addTorrent and aria2."
-"addMetalink\n"
+"                              added by aria2.addTorrent and "
+"aria2.addMetalink\n"
 "                              RPC method and whose metadata could not be "
 "saved\n"
 "                              as a file will not be saved. Downloads "
@@ -2243,8 +2248,8 @@ msgstr ""
 #: src/usage_text.h:795
 msgid ""
 " --max-download-result=NUM    Set maximum number of download result kept in\n"
-"                              memory. The download results are completed/"
-"error/\n"
+"                              memory. The download results are "
+"completed/error/\n"
 "                              removed downloads. The download results are "
 "stored\n"
 "                              in FIFO queue and it can store at most NUM\n"
@@ -2508,8 +2513,8 @@ msgstr ""
 
 #: src/usage_text.h:891
 msgid ""
-" --download-result=OPT        This option changes the way \"Download Results"
-"\"\n"
+" --download-result=OPT        This option changes the way \"Download "
+"Results\"\n"
 "                              is formatted. If OPT is 'default', print GID,\n"
 "                              status, average download speed and path/URI. "
 "If\n"
@@ -2562,7 +2567,8 @@ msgid ""
 "                              \"aria2c -v\". DIGEST is hex digest.\n"
 "                              For example, setting sha-1 digest looks like\n"
 "                              this:\n"
-"                              sha-1=0192ba11326fe2298c8cb4de616f4d4140213838\n"
+"                              sha-"
+"1=0192ba11326fe2298c8cb4de616f4d4140213838\n"
 "                              This option applies only to HTTP(S)/FTP\n"
 "                              downloads."
 msgstr ""
@@ -2802,12 +2808,11 @@ msgstr ""
 "                              1M = 1024K)."
 
 #: src/usage_text.h:1003
-#, fuzzy
 msgid ""
 " --gid=GID                    Set GID manually. aria2 identifies each\n"
 "                              download by the ID called GID. The GID must "
 "be\n"
-"                              hex string of 16 characters, thus [0-9a-fA-F]\n"
+"                              hex string of 16 characters, thus [0-9a-zA-Z]\n"
 "                              are allowed and leading zeros must not be\n"
 "                              stripped. The GID all 0 is reserved and must\n"
 "                              not be used. The GID must be unique, "
@@ -2835,7 +2840,8 @@ msgstr ""
 
 #: src/usage_text.h:1015
 msgid " --console-log-level=LEVEL    Set log level to output to console."
-msgstr " --console-log-level=NÍVEL    Define o nível de saída para o console."
+msgstr ""
+" --console-log-level=NÍVEL    Define o nível de saída para o console."
 
 #: src/usage_text.h:1017
 msgid ""
@@ -3009,7 +3015,8 @@ msgid ""
 "                              hash type. The supported hash type is sha-1 "
 "or\n"
 "                              md5. DIGEST is hex digest. For example:\n"
-"                              sha-1=b030503d4de4539dc7885e6f0f5e256704edf4c3\n"
+"                              sha-"
+"1=b030503d4de4539dc7885e6f0f5e256704edf4c3\n"
 "                              This option can be used to validate server's\n"
 "                              public key when SFTP is used. If this option "
 "is\n"
@@ -3391,8 +3398,8 @@ msgstr ""
 #: src/AdaptiveURISelector.cc:238
 #, c-format
 msgid ""
-"Lowering lowest-speed-limit since we have no clue about available speed (now:"
-"%d was:%d)"
+"Lowering lowest-speed-limit since we have no clue about available speed "
+"(now:%d was:%d)"
 msgstr ""
 "Reduzindo lowest-speed-limit, já que não temos a mínima ideia qual é a "
 "velocidade disponível (agora:%d antes:%d)"
@@ -3418,7 +3425,7 @@ msgstr "IPv%d RPC: ouvindo na porta TCP %u"
 msgid "IPv%d BitTorrent: listening on TCP port %u"
 msgstr "IPv%d BitTorrent: ouvindo na porta TCP %u"
 
-#: src/RequestGroup.cc:400
+#: src/RequestGroup.cc:399
 msgid ""
 "For BitTorrent Magnet URI, enabling DHT is strongly recommended. See --"
 "enable-dht option."
@@ -3426,7 +3433,7 @@ msgstr ""
 "Para Bittorrent Magnet URI, habilitar DHT é altamente recomendado. Ver opção "
 "--enable-dht."
 
-#: src/RequestGroup.cc:695
+#: src/RequestGroup.cc:694
 #, c-format
 msgid "Removed control file for %s because it is requested by user."
 msgstr ""
@@ -3767,8 +3774,8 @@ msgstr "Nenhum arquivo download."
 
 #: src/message.h:186
 msgid ""
-"You may encounter the certificate verification error with HTTPS server. See "
-"--ca-certificate and --check-certificate option."
+"You may encounter the certificate verification error with HTTPS server. See -"
+"-ca-certificate and --check-certificate option."
 msgstr ""
 "Você pode ter encontrado um erro na verificação do certificado com servidor "
 "HTTPS. Veja as opções --ca-certificate e --check-certificate."
@@ -3964,7 +3971,8 @@ msgstr "Falhou ao ler dados do disco."
 
 #: src/message.h:243
 #, c-format
-msgid "Failed to calculate SHA1 digest of or a part of the file %s, cause: %s"
+msgid ""
+"Failed to calculate SHA1 digest of or a part of the file %s, cause: %s"
 msgstr "Falha no cálculo do SHA1 como parte do arquivo %s, causa: %s"
 
 #: src/message.h:244

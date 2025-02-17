@@ -2,12 +2,14 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: aria2
 Upstream-Contact: Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
 Source: https://aria2.github.io
+Comment: Repacked upstream source to remove sphinx theme and added po files from Launchpad.
+Files-Excluded: doc/sphinx_themes/*
 
 Files: *
-Copyright: (C) 2006-2017, Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>,
-                          Ross Smith II <aria2spam@netebb.com>,
-                          Nils Maier <maierman@web.de>,
-                          See AUTHORS for full list.
+Copyright: 2006-2023, Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>,
+                      Ross Smith II <aria2spam@netebb.com>,
+                      Nils Maier <maierman@web.de>,
+                      See AUTHORS for full list.
 License: GPL-2+ with OpenSSL exception
  This program is free software; you can redistribute it and/or modify it under
  the terms of the GNU General Public License as published by the Free Software
@@ -39,8 +41,8 @@ License: GPL-2+ with OpenSSL exception
  source files in the program, then also delete it here.
 
 Files: debian/*
-Copyright: (C) 2006-2017, Patrick Ruckstuhl <patrick@ch.tario.org>,
-           (C) 2010-2017, Kartik Mistry <kartik@debian.org>
+Copyright: 2006-2024, Patrick Ruckstuhl <patrick@ch.tario.org>,
+           2010-2025, Kartik Mistry <kartik@debian.org>
 License: GPL-2+
  This program is free software; you can redistribute it and/or modify it under
  the terms of the GNU General Public License as published by the Free Software

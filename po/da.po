@@ -6,24 +6,23 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: aria2\n"
-"Report-Msgid-Bugs-To: https://aria2.github.io/\n"
-"POT-Creation-Date: 2021-08-21 17:31+0900\n"
-"PO-Revision-Date: 2010-11-20 12:18+0000\n"
-"Last-Translator: Josso <Unknown>\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2017-10-17 22:28+0900\n"
+"PO-Revision-Date: 2021-09-23 18:21+0000\n"
+"Last-Translator: Jimmy Frydkær Jensen <jimmy@frydkaer.net>\n"
 "Language-Team: Danish <da@li.org>\n"
-"Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2021-08-21 07:32+0000\n"
-"X-Generator: Launchpad (build 25edfd4b3e79d9ee9d9c3a750eb93e4d41d56c9e)\n"
+"X-Launchpad-Export-Date: 2023-11-17 08:00+0000\n"
+"X-Generator: Launchpad (build f1e537f62ee3967c2b3f24dd10eacf1696334fe6)\n"
 
-#: src/DownloadEngine.cc:255
+#: src/DownloadEngine.cc:247
 msgid ""
 "Shutdown sequence commencing... Press Ctrl-C again for emergency shutdown."
 msgstr "Afslutningsprocedure i gang... Tryk Ctrl-C igen for nød-afslutning."
 
-#: src/DownloadEngine.cc:265
+#: src/DownloadEngine.cc:257
 msgid "Emergency shutdown sequence commencing..."
 msgstr "Nød-afslutningsprocedure i gang..."
 
@@ -42,22 +41,22 @@ msgstr ""
 #: src/MultiUrlRequestInfo.cc:342
 #, c-format
 msgid "Serialized session to '%s' successfully."
-msgstr ""
+msgstr "Løbende session til '%s' succesfuld."
 
 #: src/MultiUrlRequestInfo.cc:346
 #, c-format
 msgid "Failed to serialize session to '%s'."
-msgstr ""
+msgstr "Løbende session til '%s' fejlede."
 
 #: src/RequestGroupMan.cc:374
 #, c-format
 msgid "Download GID#%s paused"
-msgstr ""
+msgstr "Filhentning GID#%s på pause."
 
 #: src/RequestGroupMan.cc:425
 #, c-format
 msgid "Download GID#%s not complete: %s"
-msgstr ""
+msgstr "Filhentning GID#%s ikke komplet: %s"
 
 #: src/RequestGroupMan.cc:704
 msgid "Download Results:"
@@ -69,19 +68,19 @@ msgstr "Status forklaring:"
 
 #: src/RequestGroupMan.cc:755
 msgid "(OK):download completed."
-msgstr ""
+msgstr "(OK):filhentning gennemført."
 
 #: src/RequestGroupMan.cc:758
 msgid "(ERR):error occurred."
-msgstr ""
+msgstr "(ERR): drt skete en fejl."
 
 #: src/RequestGroupMan.cc:761
 msgid "(INPR):download in-progress."
-msgstr ""
+msgstr "(NPR): filhentning i gang"
 
 #: src/RequestGroupMan.cc:764
 msgid "(RM):download removed."
-msgstr ""
+msgstr "(RM): filhentning fjernet."
 
 #: src/OptionHandler.cc:38
 msgid "                              Default: "
@@ -93,12 +92,13 @@ msgstr "                              Mærker: "
 
 #: src/OptionHandler.cc:40
 msgid "                              Possible Values: "
-msgstr ""
+msgstr "                              Mulige værdiger: "
 
 #: src/usage_text.h:39
 msgid ""
 " -d, --dir=DIR                The directory to store the downloaded file."
-msgstr " -d, --dir=MAPPE              Mappen hvor den hentede fil skal gemmes."
+msgstr ""
+" -d, --dir=MAPPE              Mappen hvor den hentede fil skal gemmes."
 
 #: src/usage_text.h:41
 msgid ""
@@ -127,6 +127,13 @@ msgid ""
 "to\n"
 "                              \"/dev/null\"."
 msgstr ""
+" -D, --daemon[=true|false]    Kører som daemon. Det aktuelle arbejdende "
+"bibliotek vil\n"
+"                              blive ændret til \"/\" og standard inddata, "
+"standard\n"
+"                              uddata og standard fejl vil blive omdirigeret "
+"til\n"
+"                              \"/dev/null\"."
 
 #: src/usage_text.h:54
 msgid ""
@@ -153,6 +160,10 @@ msgid ""
 "the\n"
 "                              HTTP server returns 503 response."
 msgstr ""
+" --retry-wait=SEC             Sæt sekunderne til at vente imellem forsøg. \n"
+"                              With SEC > 0, aria2 vil forsøge hentning igen "
+"når\n"
+"                              HTTP serveren returnerer 503 svar."
 
 #: src/usage_text.h:68
 msgid " -t, --timeout=SEC            Set timeout in seconds."
@@ -169,6 +180,11 @@ msgid ""
 "                              See also the --all-proxy option.\n"
 "                              This affects all http downloads."
 msgstr ""
+" --http-proxy=PROXY           Brug en proxy server til HTTP. For at "
+"tilsidesætte en\n"
+"                              tidligere defineret proxy, brug \"\".\n"
+"                              Se også --all-proxy muligheden.\n"
+"                              Dette påvirker alle http filhentninger."
 
 #: src/usage_text.h:77
 msgid ""
@@ -177,6 +193,11 @@ msgid ""
 "                              See also the --all-proxy option.\n"
 "                              This affects all https downloads."
 msgstr ""
+" --https-proxy=PROXY          Brug en proxy server til HTTPS. For at "
+"tilsidesætte en \n"
+"                              tidligere defineret proxy, brug \"\".\n"
+"                              Se også --all-proxy muligheden.\n"
+"                              Dette påvirker alle https filhentninger."
 
 #: src/usage_text.h:82
 msgid ""
@@ -185,6 +206,11 @@ msgid ""
 "                              See also the --all-proxy option.\n"
 "                              This affects all ftp downloads."
 msgstr ""
+" --ftp-proxy=PROXY            Brug en proxy server til FTP. For at "
+"tilsidesætte en \n"
+"                              tidligere defineret proxy, brug \"\".\n"
+"                              Se også --all-proxy muligheden.\n"
+"                              Dette påvirker alle ftp filhentninger."
 
 #: src/usage_text.h:87
 msgid ""
@@ -199,6 +225,16 @@ msgid ""
 "                              options.\n"
 "                              This affects all downloads."
 msgstr ""
+" --all-proxy=PROXY            Brug en proxy server til alle protokoller. For "
+"at  tilsidesætte\n"
+"                              en tidligere defineret proxy, brug \"\".\n"
+"                              Du kan også tilsidesætte denne indstilling og "
+"specificere en\n"
+"                              proxy server for en speciel protokol ved at "
+"bruge den\n"
+"                              --http-proxy, --https-proxy og --ftp-proxy\n"
+"                              muligheder.\n"
+"                              This affects all downloads."
 
 #: src/usage_text.h:95
 msgid " --http-user=USER             Set HTTP user. This affects all URLs."
@@ -206,7 +242,8 @@ msgstr ""
 " --http-user=BRUGER           Sæt HTTP bruger. Dette påvirker alle URLs."
 
 #: src/usage_text.h:97
-msgid " --http-passwd=PASSWD         Set HTTP password. This affects all URLs."
+msgid ""
+" --http-passwd=PASSWD         Set HTTP password. This affects all URLs."
 msgstr ""
 " --http-passwd=KODE           Sæt HTTP kodeord. Dette påvirker alle URLs."
 
@@ -224,13 +261,23 @@ msgid ""
 "                              This may be useful when used together with\n"
 "                              the -P option."
 msgstr ""
+" --referer=REFERANCE            Sæt en http reference (Referer). Dette "
+"påvirker\n"
+"                              alle http/https filhentninger. Hvis \"*\" er "
+"givet,\n"
+"                              filhentnings URI'en er også brugt som "
+"referencen.\n"
+"                              Dette kan være brugbart når den bruges sammen "
+"med\n"
+"                              -P muligheden."
 
 #: src/usage_text.h:107
 msgid " --ftp-user=USER              Set FTP user. This affects all URLs."
 msgstr " --ftp-user=USER Sæt FTP bruger. Dette påvirker all URLs."
 
 #: src/usage_text.h:109
-msgid " --ftp-passwd=PASSWD          Set FTP password. This affects all URLs."
+msgid ""
+" --ftp-passwd=PASSWD          Set FTP password. This affects all URLs."
 msgstr " --ftp-passwd=PASSWD Sæt FTP password. Dette påvirker all URLs."
 
 #: src/usage_text.h:111
@@ -270,15 +317,15 @@ msgstr ""
 
 #: src/usage_text.h:122
 msgid ""
-" --max-overall-download-limit=SPEED Set max overall download speed in bytes/"
-"sec.\n"
+" --max-overall-download-limit=SPEED Set max overall download speed in "
+"bytes/sec.\n"
 "                              0 means unrestricted.\n"
 "                              You can append K or M(1K = 1024, 1M = 1024K).\n"
 "                              To limit the download speed per download, use\n"
 "                              --max-download-limit option."
 msgstr ""
-" --max-overall-download-limit=HASTIGHED Sæt max download hastighed i bytes/"
-"sek.\n"
+" --max-overall-download-limit=HASTIGHED Sæt max download hastighed i "
+"bytes/sek.\n"
 "                              0 betyder ubegrænset.\n"
 "                              Du kan tilføje K eller M(1K = 1024, 1M = "
 "1024K).\n"
@@ -332,6 +379,32 @@ msgid ""
 "file\n"
 "                              to a specified length."
 msgstr ""
+" --file-allocation=METODE     Specificer file allocation metode.\n"
+"                              'none' for-allokerer ikke  filplads. "
+"'prealloc'\n"
+"                              for-allokerer filplads før filhentning "
+"begynder.\n"
+"                              Dette kan bruge noget tid afhængig af "
+"størrelsen på\n"
+"                              filen.\n"
+"                              Hvis bruger nyere filsystemer som ext4\n"
+"                              (med extents support), btrfs, xfs or NTFS\n"
+"                              (MinGW build only), 'falloc' er dit bedste\n"
+"                              valg. Det allokerer stor(få GiB) filer\n"
+"                              næsten omgåemde. brug ikke 'falloc' med "
+"legacy\n"
+"                              filsystemer så som ext3 og FAT32 fordi det\n"
+"                              varer næsten lige så længe som 'prealloc' og "
+"det\n"
+"                              blocks aria2 entirely until allocation "
+"finishes.\n"
+"                              'falloc' er måske ikke tilgængelig hvis dit "
+"system\n"
+"                              ikke har posix_fallocate() funktion.\n"
+"                              'trunc' bruger ftruncate() system kald or\n"
+"                              platformspecifik modpart til at afkorte en "
+"fil\n"
+"                              til en specificeret længde."
 
 #: src/usage_text.h:153
 msgid ""
@@ -364,6 +437,9 @@ msgid ""
 "See\n"
 "                              also --auto-file-renaming option."
 msgstr ""
+" --allow-overwrite[=true|false] Genstart filhentning fra bunden hvis den\n"
+"                              tilsvarende kontrolfil ikke eksisterer.  See\n"
+"                              også --auto-file-renaming muligheden."
 
 #: src/usage_text.h:165
 msgid ""
@@ -375,6 +451,14 @@ msgid ""
 "                              proceed but some download progress will be "
 "lost."
 msgstr ""
+" --allow-piece-length-ændre[=true|false] Hvis falsk er givet, vil aria2 "
+"afbryde\n"
+"                              filhentning når et stykke længde er forskellig "
+"fra\n"
+"                              en i en kontrolfil. Hvis sand er givet, du "
+"kan\n"
+"                              fortsætte men nogen filhentnings fremgang vil "
+"være tabt."
 
 #: src/usage_text.h:170
 msgid ""
@@ -384,6 +468,11 @@ msgid ""
 "like\n"
 "                              the usual command-line download utilities."
 msgstr ""
+" -Z, --force-sequential[=true|false] Hent URIs i den kommand-linje "
+"fortløbende\n"
+"                              og hent hver URI i en separat session, som\n"
+"                              de sædvanlige kommando-linje filhentnings-"
+"værktøjer."
 
 #: src/usage_text.h:174
 msgid ""
@@ -396,6 +485,15 @@ msgid ""
 "                              appended after the name, but before the file\n"
 "                              extension, if any."
 msgstr ""
+" --auto-file-renaming[=true|false] Omdøb filnavn hvis den samme fil "
+"allerede\n"
+"                              eksisterer. Denne mulighed virker kun på "
+"http(s)/ftp\n"
+"                              filhentninger.\n"
+"                              Det nye filnavn har et punktum og et "
+"nummer(1..9999)\n"
+"                              tilføjet efter navnet, men før fil\n"
+"                              endelse, hvis nogen."
 
 #: src/usage_text.h:181
 msgid ""
@@ -412,6 +510,19 @@ msgid ""
 "                              as the second example above, -Z option is\n"
 "                              required."
 msgstr ""
+" -P, --parameterized-uri[=true|false] Aktiver parameterized URI support.\n"
+"                              Du kan specificere et sæt af dele:\n"
+"                              http://{sv1,sv2,sv3}/foo.iso\n"
+"                              Du kan også specificere nummerisk rækkefølge "
+"med skridt\n"
+"                              tæller:\n"
+"                              http://host/image[000-100:2].img\n"
+"                              En skridt tællerr kan udelades.\n"
+"                              Hvis alle URIs ikke peger på den samme fil, "
+"så\n"
+"                              som det andet eksempel ovenfor, -Z muligheden "
+"er\n"
+"                              krævet."
 
 #: src/usage_text.h:192
 msgid ""
@@ -422,7 +533,7 @@ msgstr ""
 
 #: src/usage_text.h:194
 msgid " --enable-http-pipelining[=true|false] Enable HTTP/1.1 pipelining."
-msgstr ""
+msgstr " --enable-http-pipelining[=true|false] Aktiver HTTP/1.1 pipelining."
 
 #: src/usage_text.h:196
 msgid ""
@@ -556,8 +667,8 @@ msgstr ""
 
 #: src/usage_text.h:267
 msgid ""
-" --save-cookies=FILE          Save Cookies to FILE in Mozilla/Firefox(1.x/2."
-"x)/\n"
+" --save-cookies=FILE          Save Cookies to FILE in "
+"Mozilla/Firefox(1.x/2.x)/\n"
 "                              Netscape format. If FILE already exists, it "
 "is\n"
 "                              overwritten. Session Cookies are also saved "
@@ -584,8 +695,8 @@ msgid ""
 "                              You can find the file index using the\n"
 "                              --show-files option. Multiple indexes can be\n"
 "                              specified by using ',', for example: \"3,6\".\n"
-"                              You can also use '-' to specify a range: "
-"\"1-5\".\n"
+"                              You can also use '-' to specify a range: \"1-"
+"5\".\n"
 "                              ',' and '-' can be used together.\n"
 "                              When used with the -M option, index may vary\n"
 "                              depending on the query(see --metalink-* "
@@ -617,8 +728,8 @@ msgstr ""
 msgid ""
 " --listen-port=PORT...        Set TCP port number for BitTorrent downloads.\n"
 "                              Multiple ports can be specified by using ',',\n"
-"                              for example: \"6881,6885\". You can also use "
-"'-'\n"
+"                              for example: \"6881,6885\". You can also use '-"
+"'\n"
 "                              to specify a range: \"6881-6999\". ',' and '-' "
 "can\n"
 "                              be used together."
@@ -628,14 +739,14 @@ msgstr ""
 "',',\n"
 "                              for eksempel: \"6881,6885”. Du kan også bruge "
 "'-‘\n"
-"                              til at specificere en række af porte: "
-"\"6881-6999”. \n"
+"                              til at specificere en række af porte: \"6881-"
+"6999”. \n"
 "                              ',’ og '-‘ kan bruges sammen."
 
 #: src/usage_text.h:305
 msgid ""
-" --max-overall-upload-limit=SPEED Set max overall upload speed in bytes/"
-"sec.\n"
+" --max-overall-upload-limit=SPEED Set max overall upload speed in "
+"bytes/sec.\n"
 "                              0 means unrestricted.\n"
 "                              You can append K or M(1K = 1024, 1M = 1024K).\n"
 "                              To limit the upload speed per torrent, use\n"
@@ -727,8 +838,8 @@ msgid ""
 "specified\n"
 "                              by using ',', for example: \"6881,6885\". You "
 "can\n"
-"                              also use '-' to specify a range: "
-"\"6881-6999\".\n"
+"                              also use '-' to specify a range: \"6881-"
+"6999\".\n"
 "                              ',' and '-' can be used together."
 msgstr ""
 
@@ -799,8 +910,8 @@ msgstr ""
 
 #: src/usage_text.h:384
 msgid ""
-" -M, --metalink-file=METALINK_FILE The file path to the .meta4 and ."
-"metalink\n"
+" -M, --metalink-file=METALINK_FILE The file path to the .meta4 and "
+".metalink\n"
 "                              file. Reads input from stdin when '-' is\n"
 "                              specified."
 msgstr ""
@@ -1466,8 +1577,8 @@ msgid ""
 "                              You can pass this output file to aria2c with -"
 "i\n"
 "                              option on restart. Please note that downloads\n"
-"                              added by aria2.addTorrent and aria2."
-"addMetalink\n"
+"                              added by aria2.addTorrent and "
+"aria2.addMetalink\n"
 "                              RPC method and whose metadata could not be "
 "saved\n"
 "                              as a file will not be saved. Downloads "
@@ -1589,8 +1700,8 @@ msgstr ""
 #: src/usage_text.h:795
 msgid ""
 " --max-download-result=NUM    Set maximum number of download result kept in\n"
-"                              memory. The download results are completed/"
-"error/\n"
+"                              memory. The download results are "
+"completed/error/\n"
 "                              removed downloads. The download results are "
 "stored\n"
 "                              in FIFO queue and it can store at most NUM\n"
@@ -1756,8 +1867,8 @@ msgstr ""
 
 #: src/usage_text.h:891
 msgid ""
-" --download-result=OPT        This option changes the way \"Download Results"
-"\"\n"
+" --download-result=OPT        This option changes the way \"Download "
+"Results\"\n"
 "                              is formatted. If OPT is 'default', print GID,\n"
 "                              status, average download speed and path/URI. "
 "If\n"
@@ -1792,7 +1903,8 @@ msgid ""
 "                              \"aria2c -v\". DIGEST is hex digest.\n"
 "                              For example, setting sha-1 digest looks like\n"
 "                              this:\n"
-"                              sha-1=0192ba11326fe2298c8cb4de616f4d4140213838\n"
+"                              sha-"
+"1=0192ba11326fe2298c8cb4de616f4d4140213838\n"
 "                              This option applies only to HTTP(S)/FTP\n"
 "                              downloads."
 msgstr ""
@@ -1941,7 +2053,7 @@ msgid ""
 " --gid=GID                    Set GID manually. aria2 identifies each\n"
 "                              download by the ID called GID. The GID must "
 "be\n"
-"                              hex string of 16 characters, thus [0-9a-fA-F]\n"
+"                              hex string of 16 characters, thus [0-9a-zA-Z]\n"
 "                              are allowed and leading zeros must not be\n"
 "                              stripped. The GID all 0 is reserved and must\n"
 "                              not be used. The GID must be unique, "
@@ -2071,7 +2183,8 @@ msgid ""
 "                              hash type. The supported hash type is sha-1 "
 "or\n"
 "                              md5. DIGEST is hex digest. For example:\n"
-"                              sha-1=b030503d4de4539dc7885e6f0f5e256704edf4c3\n"
+"                              sha-"
+"1=b030503d4de4539dc7885e6f0f5e256704edf4c3\n"
 "                              This option can be used to validate server's\n"
 "                              public key when SFTP is used. If this option "
 "is\n"
@@ -2357,8 +2470,8 @@ msgstr ""
 #: src/AdaptiveURISelector.cc:238
 #, c-format
 msgid ""
-"Lowering lowest-speed-limit since we have no clue about available speed (now:"
-"%d was:%d)"
+"Lowering lowest-speed-limit since we have no clue about available speed "
+"(now:%d was:%d)"
 msgstr ""
 
 #: src/BtStopDownloadCommand.cc:65
@@ -2381,13 +2494,13 @@ msgstr ""
 msgid "IPv%d BitTorrent: listening on TCP port %u"
 msgstr ""
 
-#: src/RequestGroup.cc:400
+#: src/RequestGroup.cc:399
 msgid ""
 "For BitTorrent Magnet URI, enabling DHT is strongly recommended. See --"
 "enable-dht option."
 msgstr ""
 
-#: src/RequestGroup.cc:695
+#: src/RequestGroup.cc:694
 #, c-format
 msgid "Removed control file for %s because it is requested by user."
 msgstr ""
@@ -2711,8 +2824,8 @@ msgstr ""
 
 #: src/message.h:186
 msgid ""
-"You may encounter the certificate verification error with HTTPS server. See "
-"--ca-certificate and --check-certificate option."
+"You may encounter the certificate verification error with HTTPS server. See -"
+"-ca-certificate and --check-certificate option."
 msgstr ""
 
 #: src/message.h:189
@@ -2895,7 +3008,8 @@ msgstr ""
 
 #: src/message.h:243
 #, c-format
-msgid "Failed to calculate SHA1 digest of or a part of the file %s, cause: %s"
+msgid ""
+"Failed to calculate SHA1 digest of or a part of the file %s, cause: %s"
 msgstr ""
 
 #: src/message.h:244
