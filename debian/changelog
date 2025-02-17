@@ -1,12 +1,47 @@
-aria2 (1.36.0-1deepin0) unstable; urgency=medium
+aria2 (1.37.0+debian-3) unstable; urgency=medium
+
+  * Added patch to fix FTBFS with gettext 0.23, Thanks to Santiago Vila
+    <sanvila@debian.org> (Closes: #1092222)
+
+ -- Kartik Mistry <kartik@debian.org>  Mon, 13 Jan 2025 11:03:46 +0530
+
+aria2 (1.37.0+debian-2) unstable; urgency=low
 
   [ Patrick Ruckstuhl ]
-  * update
+  * debian/control:
+    + Drop libgcrypt build dependency (Closes: #1071833).
+    + Change pkg-config -> pkgconf
+    + Adjust to latest version
 
-  [ Tianyu Chen ]
-  * No source change upload against GCC 12.
+  [ Kartik Mistry ]
+  * Simplify debian/watch file.
 
- -- Tianyu Chen <sweetyfish@deepin.org>  Thu, 19 Sep 2024 22:42:00 +0800
+ -- Kartik Mistry <kartik@debian.org>  Mon, 10 Jun 2024 12:03:29 +0530
+
+aria2 (1.37.0+debian-1) unstable; urgency=low
+
+  * New upstream release:
+    + Repacked upstream source to remove sphinx theme.
+    + Added po files manually from the Launchpad.
+  * debian/control:
+    + Added Build-Dep on python3-sphinx for building manpages.
+  * Updated debian/watch.
+
+ -- Kartik Mistry <kartik@debian.org>  Sun, 19 Nov 2023 19:32:56 +0530
+
+aria2 (1.36.0-2) unstable; urgency=low
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on dpkg-dev.
+
+  [ Kartik Mistry ]
+  * debian/control:
+    + Updated Standards-Version to 4.6.2
+  * Updated debian/copyright.
+  * Updated debian/watch.
+
+ -- Kartik Mistry <kartik@debian.org>  Wed, 21 Jun 2023 12:07:13 +0530
 
 aria2 (1.36.0-1) unstable; urgency=low
 
