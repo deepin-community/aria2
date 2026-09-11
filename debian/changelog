@@ -1,3 +1,9 @@
+aria2 (1.37.0+debian-4) unstable; urgency=medium
+
+  * Rebuild with LTO enabled (dpkg vendor feature optimize/lto).
+
+ -- tunaichao <tunaichao@uniontech.com>  Fri, 11 Sep 2026 09:59:41 +0800
+
 aria2 (1.37.0+debian-3) unstable; urgency=medium
 
   * Added patch to fix FTBFS with gettext 0.23, Thanks to Santiago Vila
